@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap">
+      <link rel="icon" type="image/x-icon" href="Img/Logo.png">
+
+      <link rel="stylesheet" href="Nav.css">
+<link rel="stylesheet" href="services.css">
+      <link rel="stylesheet" href="footer.css">
+      <title>Services</title>
+   </head>
+   <body>
+    <!--Nav Bar-->
+    
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="Img/logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="services.html" class="nav__link">Services</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="conatct.html" class="nav__link">Contact Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="whyus.html" class="nav__link">Why Us? </a>
+                 </li>
+
+                  <li class="nav__item">
+                     <a href="profile.html" class="nav__link">Profile </a>
+                  </li>
+
+                
+
+               
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div id="login-text">Login</div>
+
+               <i class="ri-logout-box-line nav__logout" id="logout-btn"></i>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+            
+         </nav>
+      </header>
+
+
+    
+      <!---==================== LOGIN ====================-->
+      <div class="login show-login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+            
+            <div class="login__group">
+               <div>
+                 <label for="login-email" class="login__label">Email</label>
+                 <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+               </div>
+               
+               <div>
+                 <label for="login-password" class="login__label">Password</label>
+                 <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
+               </div>
+             </div>
+             
+             <div>
+               <p class="login__signup">
+                 You do not have an account? <a href="#" id="signup-btn">Sign up</a>
+               </p>
+               
+               <a href="#" class="login__forgot" id="forgot-password-btn">
+                 You forgot your password?
+               </a>
+               <button type="submit" class="login__button">Log In</button>
+             </div>
+             
+             <!-- Forgot Password Modal -->
+             <div id="forgot-password-modal" class="forgot-password-modal">
+               <form id="forgot-password-form" class="forgot-password-form">
+                 <h2 class="forgot-password-title">Forgot Password</h2>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-email" class="forgot-password-label">Email</label>
+                   <input type="email" id="forgot-password-email" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-new-password" class="forgot-password-label">New Password</label>
+                   <input type="password" id="forgot-password-new-password" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-confirm-password" class="forgot-password-label">Confirm Password</label>
+                   <input type="password" id="forgot-password-confirm-password" class="forgot-password-input">
+                 </div>
+                 <button type="submit" id="forgot-password-submit-btn" class="forgot-password-submit-btn">Update Password</button>
+               </form>
+               <i id="forgot-password-modal-close-btn" class="ri-close-line forgot-password-modal-close-btn"></i>
+             </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <div class="logout" id="logout">
+         <div class="logout__form">
+           <h2 class="logout__title">You're logged out!</h2>
+           <br><br>
+           <p class="logout__message">Thanks for using our website!</p>
+           <br><br>
+           <a href="#" class="logout__login" id="logout-login-link">Log in again</a>
+         </div>
+       </div>
+
+
+
+
+
+      <div class="signup" id="signup"> 
+         <form action="" class="signup__form"> 
+            <h2 class="signup__title">Sign Up</h2>
+      <div class="signup__group">
+         <div>
+            <label for="signup-name" class="signup__label">Full Name</label>
+            <input type="text" placeholder="Write your full name" id="signup-name" class="signup__input">
+         </div>
+         
+         <div>
+            <label for="signup-email" class="signup__label">Email</label>
+            <input type="email" placeholder="Write your email" id="signup-email" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-password" class="signup__label">Password</label>
+            <input type="password" placeholder="Enter your password" id="signup-password" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-confirm-password" class="signup__label">Confirm Password</label>
+            <input type="password" placeholder="Confirm your password" id="signup-confirm-password" class="signup__input">
+          </div>
+      </div>
+    
+      <div>
+         <p class="signup__login">
+            You already have an account? <a href="#" id="login-link">Log in</a>
+         </p>
+    
+<button type="submit" class="signup__button">Sign Up</button>
+      </div>
+   </form>
+   <i class="ri-close-line signup__close" id="signup-close"></i>
+   
+   </div>
+
+<br><br><br><br><br><br>
+<div class="main">
+<br><br><br>
+<h1 class="ser">SERVICES</h1>
+<br><br>
+  <div class="services-grid">
+    <div class="service" data-popup="popup-1">
+      <img src="Img/WD.png" alt="Service 1">
+      <h3>WEB DEVELOPMENT </h3>
+    </div>
+    <div class="service" data-popup="popup-2">
+      <img src="Img/MPD.png" alt="Service 2">
+      <h3>MOBILE APP DEVELOPMENT</h3>
+    </div>
+    <div class="service" data-popup="popup-3">
+      <img src="Img/dataanalysis.png" alt="Service 3">
+      <h3>DATA ANALYSIS</h3>
+    </div>
+    <div class="service" data-popup="popup-4">
+      <img src="Img/Graphic.png" alt="Service 4">
+      <h3>GRAPHIC DESIGN</h3>
+    </div>
+    <div class="service" data-popup="popup-5">
+      <img src="Img/UI.png" alt="Service 5">
+      <h3>UI/UX DESIGN</h3>
+    </div>
+    <div class="service" data-popup="popup-6">
+      <img src="Img/VIDEO.png" alt="Service 6">
+      <h3>VIDEO ANIAMTION</h3>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div class="popup" id="popup-1">
+  <div class="popup-content">
+    <img src="Img/WD.png" alt="Service 1">
+    <h2>WEB DEVELOPMENT</h2>
+    <p>Web development is the process of creating and maintaining websites. It involves a combination of programming, design, and content
+
+      management. Web developers build the underlying structure, design the layout, and write the code that brings a website to life. </p>
+    <div class="projects">
+      <div class="project">
+        <img src="Img/dandeli.png" alt="Project 1">
+        <p>Project 1: Dandelions-A Responsive botanical Garden's Website. <br>Here's the link below to view website: <br>
+
+        </p>
+        <a href="https://haniaatta.github.io/daandelions/"> Dandelions </a>
+      </div>
+      <div class="project">
+        <img src="Img/arcelia.png" alt="Project 2">
+        <p>Project 2: Arcelia-An Hotel's Website.<br>Here's the link below to view website: <br> </p>
+        <a href="https://haniaatta.github.io/ARCELIA/">Arcelia Hotels</a>
+      </div>
+      <div class="project">
+        <img src="Img/i2.png" alt="Project 3">
+        <p>Project 3: Seraphina: A Responsive Fashion Brand Website.<br>Here's the link below to view website: <br> </p>
+        <a href="https://haniaatta.github.io/Seraphina/">Seraphina</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="popup" id="popup-2">
+  <div class="popup-content">
+    <img src="Img/MPD.png" alt="Service 1">
+    <h2>MOBILE APP DEVELOPMENT</h2>
+    <p>Mobile development focuses on creating software applications that run on smartphones and tablets. It involves designing user interfaces, writing code, and testing applications for various platforms like iOS and Android.
+      
+    </p>
+
+  </div>
+</div>
+
+
+
+
+<div class="popup" id="popup-3">
+  <div class="popup-content">
+    <img src="Img/dataanalysis.png" alt="Service 1">
+    <h2>DATA ANALYSIS</h2>
+    <p>Data analysis involves collecting, cleaning, transforming, and interpreting data to extract meaningful insights. Data analysts use statistical methods and data visualization techniques to uncover patterns, trends, and correlations.</p>
+    
+  </div>
+</div>
+
+
+
+
+
+<div class="popup" id="popup-4">
+  <div class="popup-content">
+    <img src="Img/Graphic.png" alt="Service 1">
+    <h2>GRAPHIC DESIGN</h2>
+    <p>Graphics design is the art and practice of creating visual content to communicate ideas and information. It involves combining text, images, and other elements to produce visually appealing and effective designs.</p>
+    
+  </div>
+</div>
+
+
+
+
+
+
+<div class="popup" id="popup-5">
+  <div class="popup-content">
+    <img src="Img/UI.png" alt="Service 1">
+    <h2>UI/UX DESIGN</h2>
+    <p>UI/UX design focuses on creating user-centered designs for digital products. UI (User Interface) design involves the visual elements of an interface, while UX (User Experience) design focuses on the overall user journey and interaction.</p>
+    <div class="projects">
+      <div class="project">
+        <img src="Img/fork.png" alt="Project 1">
+        <p>Project 1:ForkSight-Mobile App Design on Figma</p>
+      </div>
+      <div class="project">
+        <img src="Img/wander.png" alt="Project 2">
+        <p>Project 2:WanderWise-A responsive Ttravel Booking Website</p>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="popup" id="popup-6">
+  <div class="popup-content">
+    <img src="Img/VIDEO.png" alt="Service 1">
+    <h2>VIDEO ANIAMTION</h2>
+    <p>Video animation involves creating moving images through a sequence of still images or computer-generated graphics. It is used for storytelling, education, entertainment, and marketing purposes.</p>
+ 
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img src="Img/logo.png" alt="Logo" class="logo">
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h5>Address</h5>
+        <p>Technova,Gulberg Lahore,Pakistan</p>
+       </div>
+      <div class="col-md-3 col-sm-6">
+        <h5>Contact</h5>
+        <p>Phone: <a href="tel:+92111-48709051">+92111-1199994</a></p>
+        <p>Email: <a href="mailto:technova613@gmail.com">technova613@gmail.com</a></p>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <h5>Follow Us</h5>
+        <p><a href="https://www.instagram.com/technova613/?next=%2F" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <h5>Stay Up-to-Date</h5>
+        <p>Subscribe to our newsletter to receive updates and promotions:</p>
+        <form id="form">
+          <div class="field">
+              
+            <input type="email" name="email" id="email" placeholder="Email Address">
+          </div>
+        
+          <input type="submit" id="button" value="Send Email" >
+        </form>
+
+      </div>
+
+
+    <div class="row">
+     
+      <div class="col-md-12">
+        <p class="copyright">@Copyright 2024 TechNova. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('BLjbe5JGFxgYtdSp_')
+</script>
+<script >
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+event.preventDefault();
+
+btn.value = 'Sending...';
+
+const serviceID = 'service_t0o0zaa';
+const templateID = 'template_6m0rxup';
+
+emailjs.sendForm(serviceID, templateID, this)
+.then(() => {
+btn.value = 'Send Email';
+alert('Sent!');
+}, (err) => {
+btn.value = 'Send Email';
+alert(JSON.stringify(err));
+});
+});
+</script>
+
+
+
+
+
+      
+      <!--===============  JS ===============-->
+      <script src="nav.js"></script>
+      <script src="service.js"></script>
+   </body>
+</html>

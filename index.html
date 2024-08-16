@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap">
+      <link rel="icon" type="image/x-icon" href="Img/Logo.png">
+
+      <link rel="stylesheet" href="Nav.css">
+<link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="footer.css">
+      <title>Nav Bar</title>
+   </head>
+   <body>
+    <!--Nav Bar-->
+    
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="Img/logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="services.html" class="nav__link">Services</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="conatct.html" class="nav__link">Contact Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="whyus.html" class="nav__link">Why Us? </a>
+                 </li>
+
+                  <li class="nav__item">
+                     <a href="profile.html" class="nav__link">Profile </a>
+                  </li>
+
+                
+
+               
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div id="login-text">Login</div>
+
+               <i class="ri-logout-box-line nav__logout" id="logout-btn"></i>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+            
+         </nav>
+      </header>
+
+
+    
+      <!---==================== LOGIN ====================-->
+      <div class="login show-login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+            
+            <div class="login__group">
+               <div>
+                 <label for="login-email" class="login__label">Email</label>
+                 <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+               </div>
+               
+               <div>
+                 <label for="login-password" class="login__label">Password</label>
+                 <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
+               </div>
+             </div>
+             
+             <div>
+               <p class="login__signup">
+                 You do not have an account? <a href="#" id="signup-btn">Sign up</a>
+               </p>
+               
+               <a href="#" class="login__forgot" id="forgot-password-btn">
+                 You forgot your password?
+               </a>
+               <button type="submit" class="login__button">Log In</button>
+             </div>
+             
+             <!-- Forgot Password Modal -->
+             <div id="forgot-password-modal" class="forgot-password-modal">
+               <form id="forgot-password-form" class="forgot-password-form">
+                 <h2 class="forgot-password-title">Forgot Password</h2>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-email" class="forgot-password-label">Email</label>
+                   <input type="email" id="forgot-password-email" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-new-password" class="forgot-password-label">New Password</label>
+                   <input type="password" id="forgot-password-new-password" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-confirm-password" class="forgot-password-label">Confirm Password</label>
+                   <input type="password" id="forgot-password-confirm-password" class="forgot-password-input">
+                 </div>
+                 <button type="submit" id="forgot-password-submit-btn" class="forgot-password-submit-btn">Update Password</button>
+               </form>
+               <i id="forgot-password-modal-close-btn" class="ri-close-line forgot-password-modal-close-btn"></i>
+             </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <div class="logout" id="logout">
+         <div class="logout__form">
+           <h2 class="logout__title">You're logged out!</h2>
+           <br><br>
+           <p class="logout__message">Thanks for using our website!</p>
+           <br><br>
+           <a href="#" class="logout__login" id="logout-login-link">Log in again</a>
+         </div>
+       </div>
+
+
+
+
+
+      <div class="signup" id="signup"> 
+         <form action="" class="signup__form"> 
+            <h2 class="signup__title">Sign Up</h2>
+      <div class="signup__group">
+         <div>
+            <label for="signup-name" class="signup__label">Full Name</label>
+            <input type="text" placeholder="Write your full name" id="signup-name" class="signup__input">
+         </div>
+         
+         <div>
+            <label for="signup-email" class="signup__label">Email</label>
+            <input type="email" placeholder="Write your email" id="signup-email" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-password" class="signup__label">Password</label>
+            <input type="password" placeholder="Enter your password" id="signup-password" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-confirm-password" class="signup__label">Confirm Password</label>
+            <input type="password" placeholder="Confirm your password" id="signup-confirm-password" class="signup__input">
+          </div>
+      </div>
+    
+      <div>
+         <p class="signup__login">
+            You already have an account? <a href="#" id="login-link">Log in</a>
+         </p>
+    
+<button type="submit" class="signup__button">Sign Up</button>
+      </div>
+   </form>
+   <i class="ri-close-line signup__close" id="signup-close"></i>
+   
+   </div>
+
+
+<div class="main">
+  <div id="tsparticles">
+    <h1 class="main-header">TechNova</h1>
+    <p>Innovating The Digital World</p>
+   <a href="hiring.html"><button class="center-button">Applications</button></a> 
+    
+    
+  
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<section class="about-section">
+  <div class="container">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-content">
+      <div class="company-intro">
+<p>Technova is a dynamic and innovative technology company dedicated to bridging the gap between academia and industry. We offer a stimulating environment for aspiring tech enthusiasts to gain practical experience and develop essential skills. Our internships are designed to provide hands-on exposure to real-world projects, mentorship from industry experts, and opportunities to contribute to cutting-edge initiatives.</p>
+      </div>
+      <div class="mission-vision">
+        <div class="mission">
+          <h3>Mission Statement</h3>
+<p>To empower the next generation of tech talent by providing world-class internship opportunities and fostering innovation.</p>
+        </div>
+        <div class="vision">
+          <h3>Vision Statement</h3>
+<p>To be the leading technology company renowned for nurturing exceptional talent and driving groundbreaking technological advancements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services-overview">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+<p>Technova offers a comprehensive suite of digital solutions to elevate your business. From crafting captivating websites and intuitive mobile apps to unlocking the power of data through insightful analysis, we've got you covered. Our design experts create visually stunning graphics and seamless user experiences, while our animation team brings your ideas to life with engaging videos.</p>
+    <a href="services.html" class="btn">Learn More About Our Services</a>
+  </div>
+  <div class="background-image"></div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h2 class="section-title">Client Testimonials</h2>
+    <div class="testimonial-card">
+<p>Technova transformed our online presence with a stunning website that not only looks amazing but also drives conversions. Their team was incredibly responsive and delivered beyond our expectations. We're thrilled with the results!" - Sarah Khan</p>
+      <div class="logo">
+        <img src="Img/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="Client logo">
+      </div>
+    </div>
+    <div class="testimonial-card">
+<p>We needed a mobile app to engage our customers, and Technova delivered a top-notch solution. Their expertise in user experience design is unparalleled. The app has seen tremendous success, and we've received overwhelming positive feedback." - Omar Ali</p>
+      <div class="logo">
+        <img src="Img/c8e9a6b6-1474-47da-8fb3-3ce6aff25b57.png" alt="Client logo">
+      </div>
+    </div>
+    <div class="testimonial-card">
+<p>Technova's data analysis team helped us uncover valuable insights that were instrumental in making data-driven decisions. Their ability to translate complex data into actionable recommendations is impressive. We're excited to continue our partnership with them." - Ayesha Raza</p>
+      <div class="logo">
+        <img src="Img/0fba72ac-3dab-44b0-96ff-eeaa9f4fbc82.png" alt="Client logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="latest-projects">
+  <div class="container">
+    <h2 class="section-title">Latest Projects/Case Studies</h2>
+    <div class="project-card">
+      <img src="Img/wander.png" alt="Project image">
+      <h3>WanderWise</h3>
+      WanderWise is a cutting-edge travel booking system meticulously crafted using Figma to cater to the adventurous souls who yearn to explore the world without breaking the bank. Our platform offers a seamless and intuitive experience, designed to be accessible and enjoyable on any device. br*@
+
+
+      Whether you're a budget-conscious backpacker or a luxury traveler, WanderWise has something to offer. Our system provides a vast array of travel options, from budget-friendly accommodations to thrilling adventures. With a focus on affordability and exceptional customer service, we strive to make your travel dreams a reality. <br><br>
+      
+      Experience the freedom to wander with WanderWise. <br>      <br>
+      <b>      Key Features:</b> <br> <br>
+      
+      Responsive design for optimal user experience <br><br>
+      Budget-friendly travel options <br><br>
+      User-friendly booking process <br><br>
+      Cooperative and supportive management
+    </div>
+    <div class="project-card">
+      <img src="Img/fork.png" alt="Project image">
+      <h3>ForkSight</h3>
+<p>ForkSight is a mobile app designed with Figma to simplify the lives of health-conscious individuals, especially those juggling busy schedules and dietary restrictions. Our app provides essential tools and resources to support your wellness journey. <br><br>
+
+  Whether you're aiming to lose weight, maintain a balanced diet, or simply live a healthier lifestyle, ForkSight is your go-to companion. With features designed to track your meals, exercise routines, and overall well-being, we empower you to make informed choices and achieve your health goals. <br><br>
+  
+  Experience a healthier you with ForkSight. <br><br>
+  
+<b>  Key Features:</b> <br><br>
+  
+  Meal planning and tracking<br><br>
+  Exercise logging<br><br>
+  Nutritional information<br><br>
+  Personalized recommendations</p>
+        
+    </div>
+   
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<footer class="footer">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-3 col-sm-6">
+         <img src="Img/logo.png" alt="Logo" class="logo">
+       </div>
+       <div class="col-md-3 col-sm-6">
+         <h5>Address</h5>
+         <p>Technova,Gulberg Lahore,Pakistan</p>
+        </div>
+       <div class="col-md-3 col-sm-6">
+         <h5>Contact</h5>
+         <p>Phone: <a href="tel:+92111-48709051">+92111-1199994</a></p>
+         <p>Email: <a href="mailto:technova613@gmail.com">technova613@gmail.com</a></p>
+       </div>
+       <div class="col-md-2 col-sm-6">
+         <h5>Follow Us</h5>
+         <p><a href="https://www.instagram.com/technova613/?next=%2F" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></p>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-md-8 col-sm-12">
+         <h5>Stay Up-to-Date</h5>
+         <p>Subscribe to our newsletter to receive updates and promotions:</p>
+         <form id="form">
+           <div class="field">
+               
+             <input type="email" name="email" id="email" placeholder="Email Address">
+           </div>
+         
+           <input type="submit" id="button" value="Send Email" >
+         </form>
+
+       </div>
+
+ 
+     </div>
+     <div class="row">
+      
+       <div class="col-md-12">
+         <p class="copyright">@Copyright 2024 Seraphina. All rights reserved.</p>
+       </div>
+     </div>
+   </div>
+ </footer>
+ <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+   emailjs.init('BLjbe5JGFxgYtdSp_')
+ </script>
+<script >
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+event.preventDefault();
+
+btn.value = 'Sending...';
+
+const serviceID = 'service_t0o0zaa';
+const templateID = 'template_6m0rxup';
+
+emailjs.sendForm(serviceID, templateID, this)
+.then(() => {
+ btn.value = 'Send Email';
+ alert('Sent!');
+}, (err) => {
+ btn.value = 'Send Email';
+ alert(JSON.stringify(err));
+});
+});
+</script>
+
+
+
+
+
+
+      
+      <!--===============  JS ===============-->
+      <script src="nav.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.15.1/tsparticles.min.js" integrity="sha512-+/YBHVkhtPivTb7SNIgMpEheKTzgK+sNfAWGgVT9Or4kSP8OURfQ8v/M2kvY+ModBKDxIeTwLD63Yc2d/8xNNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.15.1/Core/Particle.min.js" integrity="sha512-mSMF7xWvpWBM0eEHpEQ6Z5A5LsFpDrzn5mIFcoehRc5GEjomf8Qs6eFJRwaWQjzE3XwVc0TdammzCSITItqsYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.15.1/Enums/PolygonMaskType.min.js" integrity="sha512-NCoYAl8QMX2Gs0am3NtwKrdi0tP8AmDihtiaC2abAg19cdONU2Tl2k1+SHc5XERAotamjtlJbwXVkjp5GGKlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="index.js"></script>
+   </body>
+</html>

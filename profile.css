@@ -1,0 +1,195 @@
+/* Dashboard Styles */
+
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* add this to wrap elements on smaller screens */
+}
+
+.dashboard {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #302611; /* Dark Brown */
+  color: #fff;
+}
+
+.dashboard h2 {
+  margin-top: 0;
+  color: #fff;
+  text-align: center; /* add this to center headings */
+}
+
+/* Profile Styles */
+
+.profile-project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* add this to wrap elements on smaller screens */
+}
+
+.profile-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #302611; /* Dark Brown */
+  color: #fff;
+}
+
+.profile-section h2 {
+  margin-top: 0;
+  color: #fff;
+  text-align: center; /* add this to center headings */
+}
+
+.profile-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-section label {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.profile-section input[type="text"], .profile-section input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.profile-section button[type="submit"] {
+  background-color: goldenrod; /* Golden */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-section button[type="submit"]:hover {
+  background-color: #F2C464; /* Golden Hover */
+}
+
+/* Project Submission Styles */
+
+.project-submission {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #302611; /* Dark Brown */
+  color: #fff;
+}
+
+.project-submission h2 {
+  margin-top: 0;
+  color: #fff;
+  text-align: center; /* add this to center headings */
+}
+p,ul{
+  text-align: center;
+}
+.project-submission form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-submission label {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-submission input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.project-submission textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  resize: vertical;
+}
+
+.project-submission button[type="submit"] {
+  background-color: goldenrod; /* Golden */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-submission button[type="submit"]:hover {
+  background-color: #F2C464; /* Golden Hover */
+}
+/* Media Queries */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .dashboard-container, .profile-project-container {
+    flex-direction: column;
+  }
+  .dashboard, .profile-section, .project-submission {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .profile-section form, .project-submission form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-section input[type="text"], .profile-section input[type="email"], .project-submission input[type="text"], .project-submission textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .profile-section button[type="submit"], .project-submission button[type="submit"] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .dashboard, .profile-section, .project-submission {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .profile-section form, .project-submission form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-section input[type="text"], .profile-section input[type="email"], .project-submission input[type="text"], .project-submission textarea {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .profile-section button[type="submit"], .project-submission button[type="submit"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

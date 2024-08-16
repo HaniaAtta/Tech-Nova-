@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap">
+      <link rel="icon" type="image/x-icon" href="Img/Logo.png">
+
+      <link rel="stylesheet" href="Nav.css">
+      <link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="footer.css">
+      <title>Nav Bar</title>
+   </head>
+   <body>
+    <!--Nav Bar-->
+    
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="Img/logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="services.html" class="nav__link">Services</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="conatct.html" class="nav__link">Contact Us</a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a href="whyus.html" class="nav__link">Why Us? </a>
+                 </li>
+
+                  <li class="nav__item">
+                     <a href="profile.html" class="nav__link">Profile </a>
+                  </li>
+
+                
+
+               
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div id="login-text">Login</div>
+
+               <i class="ri-logout-box-line nav__logout" id="logout-btn"></i>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+            
+         </nav>
+      </header>
+
+
+    
+      <!---==================== LOGIN ====================-->
+      <div class="login show-login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+            
+            <div class="login__group">
+               <div>
+                 <label for="login-email" class="login__label">Email</label>
+                 <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+               </div>
+               
+               <div>
+                 <label for="login-password" class="login__label">Password</label>
+                 <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
+               </div>
+             </div>
+             
+             <div>
+               <p class="login__signup">
+                 You do not have an account? <a href="#" id="signup-btn">Sign up</a>
+               </p>
+               
+               <a href="#" class="login__forgot" id="forgot-password-btn">
+                 You forgot your password?
+               </a>
+               <button type="submit" class="login__button">Log In</button>
+             </div>
+             
+             <!-- Forgot Password Modal -->
+             <div id="forgot-password-modal" class="forgot-password-modal">
+               <form id="forgot-password-form" class="forgot-password-form">
+                 <h2 class="forgot-password-title">Forgot Password</h2>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-email" class="forgot-password-label">Email</label>
+                   <input type="email" id="forgot-password-email" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-new-password" class="forgot-password-label">New Password</label>
+                   <input type="password" id="forgot-password-new-password" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-confirm-password" class="forgot-password-label">Confirm Password</label>
+                   <input type="password" id="forgot-password-confirm-password" class="forgot-password-input">
+                 </div>
+                 <button type="submit" id="forgot-password-submit-btn" class="forgot-password-submit-btn">Update Password</button>
+               </form>
+               <i id="forgot-password-modal-close-btn" class="ri-close-line forgot-password-modal-close-btn"></i>
+             </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <div class="logout" id="logout">
+         <div class="logout__form">
+           <h2 class="logout__title">You're logged out!</h2>
+           <br><br>
+           <p class="logout__message">Thanks for using our website!</p>
+           <br><br>
+           <a href="#" class="logout__login" id="logout-login-link">Log in again</a>
+         </div>
+       </div>
+
+
+
+
+
+      <div class="signup" id="signup"> 
+         <form action="" class="signup__form"> 
+            <h2 class="signup__title">Sign Up</h2>
+      <div class="signup__group">
+         <div>
+            <label for="signup-name" class="signup__label">Full Name</label>
+            <input type="text" placeholder="Write your full name" id="signup-name" class="signup__input">
+         </div>
+         
+         <div>
+            <label for="signup-email" class="signup__label">Email</label>
+            <input type="email" placeholder="Write your email" id="signup-email" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-password" class="signup__label">Password</label>
+            <input type="password" placeholder="Enter your password" id="signup-password" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-confirm-password" class="signup__label">Confirm Password</label>
+            <input type="password" placeholder="Confirm your password" id="signup-confirm-password" class="signup__input">
+          </div>
+      </div>
+    
+      <div>
+         <p class="signup__login">
+            You already have an account? <a href="#" id="login-link">Log in</a>
+         </p>
+    
+<button type="submit" class="signup__button">Sign Up</button>
+      </div>
+   </form>
+   <i class="ri-close-line signup__close" id="signup-close"></i>
+   
+   </div>
+<br><br><br><br><br><br>
+
+<!-- Profile Portal Page -->
+<div class="main">
+  <div class="container">
+    <div class="dashboard-container">
+      <div class="dashboard">
+        <h2>Dashboard</h2>
+        <br><br>
+
+        <p>Overview of user activity and submissions</p>
+
+      </div>
+ </div>
+    <div class="profile-project-container">
+      <div class="profile-section">
+        <h2>Profile Section</h2>
+        <br><br>
+        <p>User information and profile edit option</p>
+        <br><br>
+
+        <form id="profile-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" value=""><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" value=""><br><br>
+          <label for="bio">Bio:</label>
+          <textarea id="bio"></textarea><br><br>
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+      <div class="project-submission">
+        <h2>Project Submission</h2>
+        <br><br>
+
+        <p>Form for submitting projects and list of submitted projects</p>
+        <br><br>
+
+        <form id="project-form">
+          <label for="project-name">Project Name:</label>
+          <input type="text" id="project-name" value=""><br><br>
+          <label for="project-description">Project Description:</label>
+          <textarea id="project-description"></textarea><br><br>
+          <button type="submit">Submit Project</button>
+          <br><br>
+
+        </form>
+        <ul id="project-list">
+          List of submitted projects will be displayed here:
+        </ul>
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+      
+      <!--===============  JS ===============-->
+      <script src="nav.js"></script>
+      <script src="profile.js"></script>
+   </body>
+</html>

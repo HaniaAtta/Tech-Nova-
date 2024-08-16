@@ -1,0 +1,279 @@
+/* Job Listings */
+
+#job-listings {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .job-listing-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  
+  .job-listing {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .job-meta {
+    display: block;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .job-location {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .job-type {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .job-apply {
+    font-size: 14px;
+    color: #337ab7;
+    text-decoration: none;
+    border-bottom: 1px solid #337ab7;
+    transition: color 0.2s ease;
+  }
+  
+  .job-apply:hover {
+    color: #23527c;
+    border-bottom: 1px solid #23527c;
+  }
+  
+  /* Application Links */
+  
+  #application-links {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .link-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .link-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .link-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .link-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .link-button {
+    font-size: 16px;
+    color: #337ab7;
+    text-decoration: none;
+    border-bottom: 1px solid #337ab7;
+    transition: color 0.2s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .link-button:hover {
+    color: #23527c;
+    border-bottom: 1px solid #23527c;
+    background-color: #f7f7f7;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 1200px) {
+    .job-listing-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .link-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .job-listing-grid {
+      grid-template-columns: 1fr;
+    }
+    .link-grid {
+      grid-template-columns: 1fr;
+    }
+    .job-listing {
+      padding: 15px;
+    }
+    .link-item {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .job-listing {
+      padding: 10px;
+    }
+    .link-item {
+      padding: 10px;
+    }
+    .job-title {
+      font-size: 16px;
+    }
+    .link-title {
+      font-size: 16px;
+    }
+  }
+
+
+
+  /* Employee Benefits */
+
+#employee-benefits {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benefit-item {
+  background-color: #302611;
+  color: goldenrod;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.benefit-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+/* Company Culture */
+
+#company-culture {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.culture-item {
+  background-color: #302611;
+  color: goldenrod;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.culture-item:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.culture-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.culture-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .culture-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .culture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+  .benefit-item {
+    padding: 20px;
+  }
+  .culture-item {
+    padding: 20px;
+  }
+  .benefit-title {
+    font-size: 18px;
+  }
+  .culture-title {
+    font-size: 18px;
+  }
+}

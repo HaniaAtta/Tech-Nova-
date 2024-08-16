@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap">
+      <link rel="icon" type="image/x-icon" href="Img/Logo.png">
+
+      <link rel="stylesheet" href="Nav.css">
+<link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="footer.css">
+      <title>Contact Us</title>
+   </head>
+   <body>
+    <!--Nav Bar-->
+    
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="Img/logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="services.html" class="nav__link">Services</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="conatct.html" class="nav__link">Contact Us</a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a href="whyus.html" class="nav__link">Why Us? </a>
+                 </li>
+
+                  <li class="nav__item">
+                     <a href="profile.html" class="nav__link">Profile </a>
+                  </li>
+
+                
+
+               
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div id="login-text">Login</div>
+
+               <i class="ri-logout-box-line nav__logout" id="logout-btn"></i>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+            
+         </nav>
+      </header>
+
+
+    
+      <!---==================== LOGIN ====================-->
+      <div class="login show-login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+            
+            <div class="login__group">
+               <div>
+                 <label for="login-email" class="login__label">Email</label>
+                 <input type="email" placeholder="Write your email" id="login-email" class="login__input">
+               </div>
+               
+               <div>
+                 <label for="login-password" class="login__label">Password</label>
+                 <input type="password" placeholder="Enter your password" id="login-password" class="login__input">
+               </div>
+             </div>
+             
+             <div>
+               <p class="login__signup">
+                 You do not have an account? <a href="#" id="signup-btn">Sign up</a>
+               </p>
+               
+               <a href="#" class="login__forgot" id="forgot-password-btn">
+                 You forgot your password?
+               </a>
+               <button type="submit" class="login__button">Log In</button>
+             </div>
+             
+             <!-- Forgot Password Modal -->
+             <div id="forgot-password-modal" class="forgot-password-modal">
+               <form id="forgot-password-form" class="forgot-password-form">
+                 <h2 class="forgot-password-title">Forgot Password</h2>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-email" class="forgot-password-label">Email</label>
+                   <input type="email" id="forgot-password-email" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-new-password" class="forgot-password-label">New Password</label>
+                   <input type="password" id="forgot-password-new-password" class="forgot-password-input">
+                 </div>
+                 <div class="forgot-password-group">
+                   <label for="forgot-password-confirm-password" class="forgot-password-label">Confirm Password</label>
+                   <input type="password" id="forgot-password-confirm-password" class="forgot-password-input">
+                 </div>
+                 <button type="submit" id="forgot-password-submit-btn" class="forgot-password-submit-btn">Update Password</button>
+               </form>
+               <i id="forgot-password-modal-close-btn" class="ri-close-line forgot-password-modal-close-btn"></i>
+             </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <div class="logout" id="logout">
+         <div class="logout__form">
+           <h2 class="logout__title">You're logged out!</h2>
+           <br><br>
+           <p class="logout__message">Thanks for using our website!</p>
+           <br><br>
+           <a href="#" class="logout__login" id="logout-login-link">Log in again</a>
+         </div>
+       </div>
+
+
+
+
+
+      <div class="signup" id="signup"> 
+         <form action="" class="signup__form"> 
+            <h2 class="signup__title">Sign Up</h2>
+      <div class="signup__group">
+         <div>
+            <label for="signup-name" class="signup__label">Full Name</label>
+            <input type="text" placeholder="Write your full name" id="signup-name" class="signup__input">
+         </div>
+         
+         <div>
+            <label for="signup-email" class="signup__label">Email</label>
+            <input type="email" placeholder="Write your email" id="signup-email" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-password" class="signup__label">Password</label>
+            <input type="password" placeholder="Enter your password" id="signup-password" class="signup__input">
+          </div>
+          
+          <div>
+            <label for="signup-confirm-password" class="signup__label">Confirm Password</label>
+            <input type="password" placeholder="Confirm your password" id="signup-confirm-password" class="signup__input">
+          </div>
+      </div>
+    
+      <div>
+         <p class="signup__login">
+            You already have an account? <a href="#" id="login-link">Log in</a>
+         </p>
+    
+<button type="submit" class="signup__button">Sign Up</button>
+      </div>
+   </form>
+   <i class="ri-close-line signup__close" id="signup-close"></i>
+   
+   </div>
+<br><br>
+
+<div class="main">
+    <section class="contact-form">
+        <br><br>
+        <h2 class="hd">Get in Touch</h2>
+        <form id="contact-form">
+        <br><br>
+
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" id="name" name="name" required>
+          <br><br>
+      
+          <label for="email">Email:</label>
+          <br>
+          <input type="email" id="email" name="email" required>
+          <br><br>
+      
+          <label for="phone">Phone Number:</label>
+          <br>
+          <input type="tel" id="phone" name="phone" required>
+          <br><br>
+      
+          <label for="message">Message:</label>
+          <br>
+          <textarea id="message" name="message" required></textarea>
+          <br><br>
+      
+          <button type="submit" id="send-button">Send Message</button>
+        </form>
+      </section>
+      <br><br><br><br><br><br>
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+        <h5>Our Address</h5>
+        <p>Technova,Gulberg Lahore,Pakistan</p>
+        <p>Phone: <a href="tel:+92111-48709051">+92111-1199994</a></p>
+        <p>Email: <a href="mailto:technova613@gmail.com">technova613@gmail.com</a></p>
+      </section>
+      <section class="map">
+        <h2>Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27213.593047039205!2d74.34325815!3d31.5049528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a28ff1d39%3A0xf71e739b84b3c3c!2sGulberg%20III%2C%20Lahore%2C%20Punjab!5e0!3m2!1sen!2s!4v1723139722105!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+</div>
+</div>
+
+
+ <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+   emailjs.init('BLjbe5JGFxgYtdSp_')
+ </script>
+<script>
+    const btn = document.getElementById('send-button');
+  
+    document.getElementById('contact-form')
+      .addEventListener('submit', function(event) {
+        event.preventDefault();
+  
+        btn.value = 'Sending...';
+  
+        const serviceID = 'service_t0o0zaa';
+        const templateID = 'template_wrixo9l';
+  
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            btn.value = 'Send Email';
+            alert('Thank you for contacting us! We will get back to you shortly.');
+          }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+          });
+      });
+  </script>
+
+
+
+
+
+      
+      <!--===============  JS ===============-->
+      <script src="nav.js"></script>
+   </body>
+</html>

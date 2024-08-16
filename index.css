@@ -1,0 +1,438 @@
+
+  
+  #tsparticles {
+    margin-top: 6%;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #302611;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  #tsparticles p {
+    position: absolute;
+    top: 54%; /* adjust this value based on your design */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem; /* converted to rem, equivalent to 2vw */
+    color: #fff; /* simplified color notation */
+    text-align: center; /* add this to center the text horizontally */
+  }
+  
+  /* Media queries for different screen sizes */
+  
+  /* Large screens (desktops) */
+  @media (min-width: 1200px) {
+    #tsparticles p {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    #tsparticles p {
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* Small screens (mobiles) */
+  @media (max-width: 767px) {
+    #tsparticles p {
+      font-size: 1.1rem; /* adjusted font size for smaller screens */
+      top: 54%; /* adjust top value for smaller screens */
+    }
+  }
+  @media (max-width: 516px) {
+    #tsparticles p {
+      font-size: 0.9rem; /* adjusted font size for extra small screens */
+    }
+  }
+  /* Extra small screens (small mobiles) */
+  @media (max-width: 479px) {
+    #tsparticles p {
+      font-size: 0.9rem; /* adjusted font size for extra small screens */
+      top: 52%; /* adjust top value for extra small screens */
+    }
+  }
+  
+  .main-header {
+    position: absolute;
+    top: 38%; /* adjust this value based on your design */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 8.125rem; /* converted to rem, equivalent to 13vw */
+    color: #fff; /* simplified color notation */
+  }
+  
+  /* Media queries for different screen sizes */
+  
+  /* Large screens (desktops) */
+  @media (min-width: 1200px) {
+    .main-header {
+      font-size: 8.25rem;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .main-header {
+      font-size: 8rem; /* adjusted font size for medium screens */
+    }
+  }
+  
+  /* Small screens (mobiles) */
+  @media (max-width: 768px) {
+    .main-header {
+      font-size: 6.4rem;
+      top: 38%; /* adjust top value for smaller screens */
+    }
+  }
+  @media (max-width: 560px) {
+    .main-header {
+      font-size: 5.5rem;
+      top: 38%; /* adjust top value for smaller screens */
+    }
+  }
+  @media (max-width: 490px) {
+    .main-header {
+      font-size: 4.5rem;
+      top: 38%; /* adjust top value for smaller screens */
+    }
+  }
+  @media (max-width: 410px) {
+    .main-header {
+      font-size: 3.5rem;
+      top: 38%; /* adjust top value for smaller screens */
+    }
+  }
+  @media (max-width: 310px) {
+    .main-header {
+      font-size: 2.5rem;
+      top: 38%; /* adjust top value for smaller screens */
+    }
+  }
+
+  .center-button {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c2880b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .center-button:hover {
+    background-color: rgb(194, 166, 7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  .about-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .company-intro {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .company-intro p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .mission, .vision {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  
+  .mission h3, .vision h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .mission p, .vision p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsive design */
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+    .company-intro {
+      margin-bottom: 20px;
+    }
+    .mission-vision {
+      flex-direction: column;
+    }
+    .mission, .vision {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 24px;
+    }
+    .about-content {
+      padding: 0 10px;
+    }
+    .company-intro p {
+      font-size: 16px;
+    }
+    .mission h3, .vision h3 {
+      font-size: 18px;
+    }
+    .mission p, .vision p {
+      font-size: 16px;
+    }
+  }
+
+
+  .services-overview {
+    position: relative;
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    z-index: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1; /* to ensure the container is on top of the background image */
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .services-overview p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .services-overview .btn {
+    background-color: #302611;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .services-overview .btn:hover {
+    background-color: #3e2a00;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Img/MPD.png'); /* replace with your background image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* adjust the opacity to your liking */
+    z-index: -1; /* add this line to position the background image behind the container */
+  }
+  
+  /* Responsive design */
+  
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 24px;
+    }
+    .services-overview p {
+      font-size: 16px;
+    }
+    .services-overview .btn {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 18px;
+    }
+    .services-overview p {
+      font-size: 14px;
+    }
+    .services-overview .btn {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+
+
+
+
+
+
+
+  #testimonials {
+    padding: 60px 0;
+  }
+  
+  .testimonial-card {
+    background-color: #302611;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: goldenrod;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .testimonial-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  #latest-projects {
+    background-color: #fff;
+    padding: 60px 0;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .project-card a {
+    background-color: #413204;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .project-card a:hover {
+    background-color: #23527c;
+  }
+  
+  /* Responsive design */
+  
+  @media (max-width: 1200px) {
+    .testimonial-card {
+      margin-bottom: 20px;
+    }
+    .project-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-card {
+      padding: 20px;
+    }
+    .project-card {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial-card {
+      padding: 15px;
+    }
+    .project-card {
+      padding: 15px;
+    }
+  }

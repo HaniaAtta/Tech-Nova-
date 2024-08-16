@@ -1,0 +1,53 @@
+.choose{
+    text-align: center;
+    color: goldenrod;
+    font-size: 2rem;
+    font-style: bold;
+}
+.te{
+    margin-left: 12rem;
+}
+.te h3{
+    color: goldenrod;
+}
+/* Media query for small screens */
+@media (max-width: 1023) {
+    .choose {
+        font-size: 1.8rem;
+    }
+    .te {
+        margin-left: 4rem;
+
+    }
+    
+}
+@media (max-width: 926) {
+    .choose {
+        font-size: 1.8rem;
+    }
+    .te {
+        margin-left: 6rem;
+
+    }
+    
+}
+@media (max-width: 768px) {
+    .choose {
+        font-size: 1.5rem;
+    }
+    .te {
+        margin-left: 4rem;
+
+    }
+    
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+    .choose {
+        font-size: 1rem;
+    }
+    .te {
+        margin-left: 2rem;
+    }
+}
